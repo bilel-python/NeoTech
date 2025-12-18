@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fiche produit</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <img src="images/Fnac_Logo.svg.jpg" alt="Fnac" class="logo">
+    <h1>NeoTech</h1>
+    <button class="delete">🛒</button>
+    
+  </header>
+
+  <!-- Contenu principal -->
+  <main class="container">
+
+   <h2>Apple Casque Airpods Max</h2>
+
+<div class="product-layout">
+
+  <!-- Galerie produit -->
+  <div class="gallery">
+    <img
+      src="images/airpods-max.jpg.webp"
+      alt="Produit"
+      id="mainImage"
+      class="main-image"
+    >
+
+    <div class="product-details">
+      <div class="thumbnails">
+        <img src="images/airpods-max.jpg.webp" onclick="changeImage(this)">
+        <img src="images/airpods-max2.jpg.jfif" onclick="changeImage(this)">
+        <img src="images/airpods-max3.jpg.jpg" onclick="changeImage(this)">
+      </div>
+    </div>
+  </div>
+
+  <!-- Caractéristiques -->
+  <div class="features-block">
+    <h3 class="section-title">Caractéristiques</h3>
+    <ul class="features">
+      <li>🎧 Réduction de bruit active</li>
+      <li>🔋 Autonomie jusqu’à 20 heures</li>
+      <li>📶 Bluetooth 5.0</li>
+      <li>🎤 Micro intégré</li>
+    </ul>
+  </div>
+
+</div>
+<div class="btn-center">
+  <button class="open-modal">Voir le produit</button>
+  
+</div>
+  <p class="price">Prix : <strong>629€</strong></p>
+
+
+
+
+    <section class="avis-faq-container">
+
+  <!-- AVIS CLIENT -->
+  <div class="avis-client">
+    <h3>Avis client</h3>
+
+    <p class="stars">★★★★★</p>
+    <p>Son incroyable</p>
+
+    <p class="stars">★★★★★</p>
+    <p>Très confortable</p>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq">
+    <h3>FAQ</h3>
+
+    <details>
+      <summary>Le casque est-il compatible iPhone et Android ?</summary>
+      <p>Oui, il fonctionne avec tous les appareils Bluetooth.</p>
+    </details>
+
+    <details>
+      <summary>Quelle est l’autonomie du casque ?</summary>
+      <p>Jusqu’à 20 heures avec la réduction de bruit activée.</p>
+    </details>
+
+    <details>
+      <summary>Le câble est-il inclus ?</summary>
+      <p>Oui, un câble audio est fourni.</p>
+    </details>
+
+  </div>
+
+</section>
+
+
+  
+    
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <img src="images/Fnac_Logo.svg.jpg" alt="Fnac" class="logo">
+  </footer>
+<!-- Modal -->
+<div class="modal" id="productModal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h2>Apple Casque Airpods max</h2>
+    <p>Réduction de bruit active, audio spatial et confort exceptionnel.</p>
+
+    <ul>
+      <li>Autonomie : 20 heures</li>
+      <li>Bluetooth universel</li>
+      <li>Garantie 1 an</li>
+    </ul>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
